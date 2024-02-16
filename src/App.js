@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TodoWrapper from "./components/TodoWrapper";
+import { LiaTasksSolid } from "react-icons/lia";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="title-card">
+        <div className="title">
+          <h4> /TɑːSK/</h4>
+          <LiaTasksSolid className="task-btn" />
+        </div>
+        <div className="meaning">
+          <p>Noun:</p>
+          <p> A piece of work to be done or undertaken.</p>
+        </div>
+      </section>
+
+      <TodoWrapper />
     </div>
   );
 }
